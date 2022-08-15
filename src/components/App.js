@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 
 import './App.css';
 
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
-import App.js from './reducer/index.js';
 
+import reducer, { initialState } from './reducers';
 
 function App() {
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
