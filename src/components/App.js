@@ -5,7 +5,7 @@ import './App.css';
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 import App.js from './reducer/index.js';
-import App.js from './action/index.js';
+
 
 function App() {
   return (
