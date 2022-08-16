@@ -2,18 +2,18 @@ import React, { useReducer } from 'react';
 
 import './App.css';
 
-import TotalDisplay from './components/TotalDisplay';
-import CalcButton from './components/CalcButton';
+import TotalDisplay from './TotalDisplay';
+import CalcButton from './CalcButton';
 
-import reducer, { initialState } from './reducers';
+import reducer, { initialState } from './../reducers';
 import { 
   applyNumber, 
   changeOperation, 
   clearDisplay, 
   addMemory, 
-  applyMemory
+  applyMemory,
   clearMemory
-} from './actions';
+} from './../actions';
 
 function App() {
   const [ state, dispatch ] = useReducer(reducer, initialState); 

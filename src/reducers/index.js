@@ -44,25 +44,25 @@ const reducer = (state, action) => {
                 operation: action.payload
             });
 
-        case(CLEAR_DISPLAY);
+        case(CLEAR_DISPLAY):
             return ({
                 ...state,
                 total: 0
             });  
 
-        case(MEMORY_ADD);
+        case(MEMORY_ADD):
             return({
                 ...state,
                 memory: state.total
             });
 
-        case(MEMORY_APPLY);
+        case(MEMORY_APPLY):
             return({
                 ...state,
                 total: calculateResult(state.total, state.memory, state.operation)
             });
         
-        case(MEMORY_CLEAR);
+        case(MEMORY_CLEAR):
             return({
                 ...state,
                 memory: 0
